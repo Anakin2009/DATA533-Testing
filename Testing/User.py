@@ -62,3 +62,5 @@ class eUser(User):
         print(f'Account Number: {self.acc_num}')
         print(f'Date: {date}')
         print(f'Account Balance: {self.balance}')
+
+#%%
