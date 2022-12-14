@@ -1,7 +1,7 @@
 import random
-import calculation as cal
+# import calculation as cal
 import sys
-sys.path.append('C:\\Users\\sophiechen\\2022MDS\\Block 3\\Data-533\\project-step-1-XiaCatQ\\BankAccountSystem\\Interface')
+# sys.path.append('C:\\Users\\sophiechen\\2022MDS\\Block 3\\Data-533\\project-step-1-XiaCatQ\\BankAccountSystem\\Interface')
 import bankingDS as ds
 
 # generate account number
