@@ -12,7 +12,7 @@ class Testcalculation(unittest.TestCase): # test class
         print('Tear Down')
 
     @classmethod
-    def setUpClass(User):
+    def setUpClass(cls):
         print('SetupClass')
 
     @classmethod
