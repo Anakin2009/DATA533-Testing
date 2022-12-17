@@ -2,6 +2,7 @@
 import pandas as pd
 import html5lib
 
+
 # Interest Rate
 def getIntRates():
     # From TD bank
@@ -34,3 +35,4 @@ def interest(balance):
 def service(x):
     x = x + 3
     return x
+#%%
