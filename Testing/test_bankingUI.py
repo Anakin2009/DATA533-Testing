@@ -1,0 +1,40 @@
+import unittest  # Jupyter notebook
+
+from BankAccountSystem.Interface import *
+from BankAccountSystem.Interface import bankingUI
+from BankAccountSystem.Interface import bankingDS
+import BankAccountSystem.Interface.bankingUI as bankingUI
+import BankAccountSystem.Interface.bankingDS as ds
+
+
+
+
+class TestbankingUI(unittest.TestCase): # test class
+    def setUp(self):
+        print('Set up')
+
+    def tearDown(self):
+        print('Tear Down')
+
+    @classmethod
+    def setUpClass(cls):
+        print('SetupClass')
+
+    @classmethod
+    def tearDownClass(cls):
+        print('TearDownClass')
+
+    def test_signup(self):
+        self.assertEqual(bankingUI.signup('John', 10001, 10), 'John')
+        self.assertEqual(bankingUI.signup('Mary', 10002, 20), 'Mary')
+        self.assertEqual(bankingUI.signup('Tom', 10003, 30), 'Tom')
+        self.assertEqual(bankingUI.signup('Jack', 10004, 50), 'Jack')
+
+    def test_withdraw(self):
+        self.assertEqual(bankingUI.withdraw('withdraw'), 'withdraw')
+
+
+
+unittest.main(argv=[''], verbosity=2, exit=False)
+
+#%%
