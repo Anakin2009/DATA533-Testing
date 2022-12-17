@@ -3,6 +3,8 @@
 import unittest # Jupyter notebook
 from User import *
 from Calculation import *
+
+
 class TestUser(unittest.TestCase): # test class
     def __int__(self):
         return super().__int__()
@@ -44,8 +46,3 @@ class TestUser(unittest.TestCase): # test class
 
 
 unittest.main(argv=[''], verbosity=2, exit=False)
-
-
-
-
-
