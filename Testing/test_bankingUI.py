@@ -1,15 +1,12 @@
 import unittest  # Jupyter notebook
 
-from BankAccountSystem.Interface import *
-from BankAccountSystem.Interface import bankingUI
+
 from BankAccountSystem.Interface import bankingDS
 import BankAccountSystem.Interface.bankingUI as bankingUI
-import BankAccountSystem.Interface.bankingDS as ds
 
 
 
-
-class TestbankingUI(unittest.TestCase): # test class
+class TestbankingUI(unittest.TestCase):  # test class
     def setUp(self):
         print('Set up')
 
@@ -32,9 +29,17 @@ class TestbankingUI(unittest.TestCase): # test class
 
     def test_withdraw(self):
         self.assertEqual(bankingUI.withdraw('withdraw'), 'withdraw')
+        self.assertEqual(bankingUI.withdraw('deposit'), 'withdraw')
+        self.assertEqual(bankingUI.withdraw('22'), 'withdraw')
+        self.assertEqual(bankingUI.withdraw('depo'), 'with')
 
+    def test_finish_signup(self):
+        self.assertEqual(bankingUI.finish_signup('John', 10001, 10), 'John')
+        self.assertEqual(bankingUI.finish_signup('Mary', 10002, 20), 'Mary')
+        self.assertEqual(bankingUI.finish_signup('Tom', 10003, 30), 'Tom')
+        self.assertEqual(bankingUI.finish_signup('Jack', 10004, 50), 'Jack')
 
 
 unittest.main(argv=[''], verbosity=2, exit=False)
 
-#%%
+# %%
