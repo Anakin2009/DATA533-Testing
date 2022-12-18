@@ -1,7 +1,7 @@
 import unittest  # Jupyter notebook
 
 
-from BankAccountSystem.Interface import bankingDS
+from BankAccountSystem.Interface import bankingDS as ds
 import BankAccountSystem.Interface.bankingUI as bankingUI
 
 
@@ -42,4 +42,5 @@ class TestbankingUI(unittest.TestCase):  # test class
 
 unittest.main(argv=[''], verbosity=2, exit=False)
 
-# %%
+
+#%%
