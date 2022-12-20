@@ -1,7 +1,7 @@
 
 
 import unittest # Jupyter notebook
-from BankAccountSystem.Structure import *
+import BankAccountSystem.Structure.User
 
 class User():
     def __init__(self, name, acc_num):
@@ -64,6 +64,5 @@ class TestUser(unittest.TestCase): # test class
 
     if __name__ == '__main__':
         unittest.main(argv=[''], verbosity=2, exit=False)
-
 
 #%%
