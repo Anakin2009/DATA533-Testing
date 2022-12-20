@@ -60,3 +60,4 @@ class test_calculation(unittest.TestCase): # test class
         self.assertEqual(cal.service(400), 403)
 
 unittest.main(argv=[''], verbosity=2, exit=False)
+#%%
