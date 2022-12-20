@@ -16,12 +16,12 @@ def addAccount(n, aN, iA, B):
     all_accounts = os.listdir() 
     if n == "" or aN == "":
         print("All fields required!")
-        return
+        return "All fields required!"
 
     for name_check in all_accounts:
         if n == name_check:
             print("Account Already Exists!")
-            return
+            return "Account Already Exists!"
         else:
             new_file = open(n, "w")
             new_file.write(n + '\n')
